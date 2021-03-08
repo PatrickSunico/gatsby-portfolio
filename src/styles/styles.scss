@@ -1,3 +1,9 @@
+/* Tailwind */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 $GramatikaLight: "Gramatika-Light";
 $GramatikaRegular: "Gramatika-Regular";
 $GramatikaMedium: "Gramatika-Medium";
@@ -149,6 +155,11 @@ body {
   margin: 0;
 }
 
+.logo {
+  font-family: $GramatikaBlack;
+  font-weight: 700;
+}
+
 .container {
   width: 1640px;
   min-width: 1640px;
@@ -173,6 +184,6 @@ body {
 
 // Navbar
 .navbar-style {
-  background-color: rebeccapurple;
+  background: transparent;
   margin-bottom: 1.45rem;
 }

@@ -9,8 +9,10 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-// import Header from "./header"
+// Components
 import Navbar from "../components/Navbar/Navbar"
+import Hero from "../components/Hero/Hero"
+
 import "../styles/styles.scss"
 // import "./layout.scss"
 
@@ -29,6 +31,8 @@ const Layout = ({ children }) => {
     <>
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} />
+
+      <Hero />
       <div className="container">
         <div
           style={{
