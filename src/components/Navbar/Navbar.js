@@ -2,8 +2,10 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+import "./NavbarStyle.scss"
+
 const Navbar = ({ siteTitle }) => (
-  <nav className="navbar-style">
+  <nav className="navbar-style z-index-10 absolute w-full">
     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div className="relative flex items-center justify-between h-16">
         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -27,20 +29,20 @@ const Navbar = ({ siteTitle }) => (
           <div className="hidden sm:block sm:ml-6 items-end">
             <div className="flex space-x-28">
               <Link
-                href="#"
-                className="text-black	px-3 py-2 rounded-md text-sm font-medium"
+                to="/"
+                className="text-white	px-3 py-2 rounded-md text-sm font-medium"
               >
                 About
               </Link>
               <Link
-                href="#"
-                className="text-black px-3 py-2 rounded-md text-sm font-medium"
+                to="/"
+                className="text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Portfolio
               </Link>
               <Link
-                href="#"
-                className="text-black px-3 py-2 rounded-md text-sm font-medium"
+                to="/"
+                className="text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Contact
               </Link>
@@ -58,19 +60,19 @@ const Navbar = ({ siteTitle }) => (
           to="/"
           className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
         >
-          Dashboard
+          About
         </Link>
         <Link
           to="/"
           className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
         >
-          Team
+          Portfolio
         </Link>
         <Link
           to="/"
           className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
         >
-          Projects
+          Contact
         </Link>
         <Link
           to="/"

@@ -14,7 +14,6 @@ import Navbar from "../components/Navbar/Navbar"
 import Hero from "../components/Hero/Hero"
 
 import "../styles/styles.scss"
-// import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

@@ -32,14 +32,14 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: [
-            "Gramatika-Light ,Gramatika-Regular, Gramatika-Medium, Gramatika-Black",
-          ],
-          urls: ["/fonts/fonts.css"],
-        },
-      },
+      // options: {
+      //   custom: {
+      //     families: [
+      //       "Gramatika-Light ,Gramatika-Regular, Gramatika-Medium, Gramatika-Black",
+      //     ],
+      //     urls: ["/fonts/fonts.css"],
+      //   },
+      // },
     },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
