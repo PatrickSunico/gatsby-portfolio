@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 // Components
 import Navbar from "../components/Navbar/Navbar"
 import Hero from "../components/Hero/Hero"
+import Portfolio from "../components/Portfolio/Portfolio"
 
 import "../styles/styles.scss"
 
@@ -30,8 +31,8 @@ const Layout = ({ children }) => {
     <>
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} />
-
       <Hero />
+      {/* <Portfolio /> */}
       <div className="container">
         <div
           style={{

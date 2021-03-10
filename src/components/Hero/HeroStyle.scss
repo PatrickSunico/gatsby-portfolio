@@ -1,0 +1,21 @@
+@use "../../styles/variables" as var;
+
+.bg-hero__left {
+  background-color: var.$hero-color-right;
+}
+
+.bg-hero__right {
+  background-color: var.$hero-color-left;
+}
+
+.bg-hero__title-container {
+}
+
+.bg-hero__title {
+}
+
+.bg-hero__caption {
+}
+
+.bg-hero__social {
+}

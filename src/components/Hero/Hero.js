@@ -1,20 +1,24 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import "./HeroStyle.scss"
 
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-wrap sm:flex-row-reverse items-stretch h-screen">
-        <div className="w-full flex-1 h-full bgc-left">test</div>
-        {/* <div
-          className="w-full md:w-1/2 xl:w-3/5 bg-cover flex"
-          style={{ backgroundImage: `url('${leftBG}')` }}
-        >
-          {left}
-        </div> */}
-        <div className="w-full h-full flex-1 bgc-right"></div>
+      <div className="bg-hero flex flex-wrap items-stretch h-screen max-w-screen=lg x:max-w-screen-xl overflow-hidden">
+        <div className="w-full flex-1 h-70 bg-hero__left flex justify-center items-center">
+          <div className="bg-hero__title-container flex justify-start flex-col">
+            <h1 className="bg-hero__title">Patrick Sunico</h1>
+            <h2 className="bg-hero__caption">
+              A Frontend Developer & UI Designer
+            </h2>
+            <Link to="/"> My Resume </Link>
+
+            <div className="bg-hero__social"></div>
+          </div>
+        </div>
+        <div className="w-full h-70 flex-1 bg-hero__right"></div>
       </div>
     </>
   )

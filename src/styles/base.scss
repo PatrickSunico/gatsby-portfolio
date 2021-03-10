@@ -1,3 +1,5 @@
+@use './variables' as var;
+
 // Resets
 html,
 body,
@@ -126,7 +128,7 @@ table {
 
 html,
 body {
-  font-family: sans-serif;
+  font-family: var.$default;
   font-size: 16px;
   margin: 0;
 }

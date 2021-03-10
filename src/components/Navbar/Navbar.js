@@ -6,7 +6,7 @@ import "./NavbarStyle.scss"
 
 const Navbar = ({ siteTitle }) => (
   <nav className="navbar-style z-index-10 absolute w-full">
-    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div className="w-full sm:max-w-1xl md:max-w-1xl lg:max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div className="relative flex items-center justify-between h-16">
         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <button
@@ -27,7 +27,7 @@ const Navbar = ({ siteTitle }) => (
 
           {/* Links */}
           <div className="hidden sm:block sm:ml-6 items-end">
-            <div className="flex space-x-28">
+            <div className="flex space-x-10 xs:space-x-16 sm:space-x-16 md:space-x-18 lg:space-x-28">
               <Link
                 to="/"
                 className="text-white	px-3 py-2 rounded-md text-sm font-medium"
