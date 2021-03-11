@@ -3,22 +3,51 @@ import { Link } from "gatsby"
 
 import "./HeroStyle.scss"
 
+// Icons
+
+import LinkedIn from "../assets/icons/LinkedIn.svg"
+import Behance from "../assets/icons/Behance.svg"
+import Github from "../assets/icons/Github.svg"
+
 const Hero = () => {
   return (
     <>
-      <div className="bg-hero flex flex-wrap items-stretch h-screen max-w-screen=lg x:max-w-screen-xl overflow-hidden">
-        <div className="w-full flex-1 h-70 bg-hero__left flex justify-center items-center">
-          <div className="bg-hero__title-container flex justify-start flex-col">
-            <h1 className="bg-hero__title">Patrick Sunico</h1>
-            <h2 className="bg-hero__caption">
-              A Frontend Developer & UI Designer
-            </h2>
-            <Link to="/"> My Resume </Link>
+      <div className="bg-hero">
+        <div className="flex-1 bg-hero__left">
+          <div className="custom-container">
+            <div className="bg-hero__title-container bg-hero__vertical-center">
+              <h3 className="bg-hero__title space-bottom">Patrick Sunico</h3>
+              <p className="bg-hero__caption space-bottom">
+                Frontend Developer & UI Designer
+              </p>
 
-            <div className="bg-hero__social"></div>
+              <div className="bg-hero__cta-container">
+                <Link
+                  to="/"
+                  className="bg-hero__resume-btn w-full md:w-1/3 xl:w-2/5 px-6 py-4"
+                >
+                  My Resume
+                </Link>
+
+                <div className="bg-hero__social-container md:w-1/3 xl:w-1/3">
+                  <LinkedIn className="bg-hero__social-icon" />
+                  <Behance className="bg-hero__social-icon" />
+                  <Github className="bg-hero__social-icon" />
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="">
+              <div className="bg-hero__social"></div>
+
+              <Link className="bg-hero__resume-btn" to="/">
+                My Resume
+              </Link>
+            </div> */}
           </div>
         </div>
-        <div className="w-full h-70 flex-1 bg-hero__right"></div>
+
+        <div className="flex-1 bg-hero__right"></div>
       </div>
     </>
   )

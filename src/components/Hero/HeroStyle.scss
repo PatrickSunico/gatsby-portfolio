@@ -1,21 +1,85 @@
 @use "../../styles/variables" as var;
 
-.bg-hero__left {
-  background-color: var.$hero-color-right;
+// .vertical-center {
+//   margin: 0;
+//   position: absolute;
+//   top: 50%;
+//   -ms-transform: translateY(-50%);
+//   transform: translateY(-50%);
+// }
+.bg-hero {
+  height: 100%;
+  display: flex;
+  position: relative;
+  &__left {
+    display: flex;
+    background-color: var.$hero-color-right;
+    height: 100vh;
+  }
+
+  &__right {
+    display: flex;
+    background-color: var.$hero-color-left;
+    height: 100vh;
+  }
+
+  &__title-container {
+    // justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+  }
+
+  &__vertical-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: var.$GramatikaBlack;
+  }
+
+  &__caption {
+    font-family: var.$GramatikaMedium;
+    font-size: var.$caption;
+  }
+
+  &__cta-container {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__resume-btn {
+    background-color: var.$pink;
+    // padding: 0.8em;
+    // width: 7rem;
+    // width: auto;
+    text-align: center;
+    color: var.$default-white;
+    font-family: var.$GramatikaMedium;
+    font-size: 1.2em;
+  }
+
+  &__social-container {
+    display: flex;
+    margin-top: 1.2em;
+    justify-content: space-between;
+  }
 }
 
-.bg-hero__right {
-  background-color: var.$hero-color-left;
-}
+//   // Desktop Sizes
+//   @media (max-width: 1440px) {
+//     width: 1280px;
+//     min-width: 1280px;
+//   }
 
-.bg-hero__title-container {
-}
+//   //   Medium Sized Laptops
+//   @media (max-width: 1280px) {
+//     width: 976px;
+//     min-width: 976px;
+//   }
 
-.bg-hero__title {
-}
-
-.bg-hero__caption {
-}
-
-.bg-hero__social {
-}
+//   @media (max-width: 976px) {
+//     width: 100%;
+//     min-width: 100%;
+//   }
