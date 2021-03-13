@@ -5,9 +5,9 @@ import "./HeroStyle.scss"
 
 // Icons
 
-import LinkedIn from "../assets/icons/LinkedIn.svg"
-import Behance from "../assets/icons/Behance.svg"
-import Github from "../assets/icons/Github.svg"
+// import LinkedIn from "../assets/icons/LinkedIn.svg"
+// import Behance from "../assets/icons/Behance.svg"
+// import Github from "../assets/icons/Github.svg"
 
 const Hero = () => {
   return (
@@ -30,9 +30,9 @@ const Hero = () => {
                 </Link>
 
                 <div className="bg-hero__social-container md:w-1/3 xl:w-1/3">
-                  <LinkedIn className="bg-hero__social-icon" />
-                  <Behance className="bg-hero__social-icon" />
-                  <Github className="bg-hero__social-icon" />
+                  {/* <LinkedIn className="bg-hero__social-icon" /> */}
+                  {/* <Behance className="bg-hero__social-icon" />
+                  <Github className="bg-hero__social-icon" /> */}
                 </div>
               </div>
             </div>
