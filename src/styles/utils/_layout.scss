@@ -1,4 +1,5 @@
 @use "./variables" as variables;
+@import "./mixins";
 /* Includes grid systems, responsive frameworks, wrappers, etc */
 
 /* 
@@ -18,7 +19,6 @@
 
 .bg-hero {
   flex-direction: column;
-
   &__left {
     height: 300px;
     margin: 20px 20px;
@@ -27,7 +27,6 @@
   &__right {
     height: 300px;
   }
-
   h3 {
     font-size: 2em;
   }
@@ -36,7 +35,7 @@
     font-size: 1.2em;
   }
 
-  @media (min-width: 576px) {
+  @include respond(smphones) {
     .bg-hero__cta-container {
       width: 180px;
     }
@@ -51,7 +50,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @include respond(phablets) {
     flex-direction: row;
 
     &__left {
@@ -72,7 +71,7 @@
       }
     }
   }
-  @media (min-width: 992px) {
+  @include respond(tablets) {
     &__container {
       h3 {
         font-size: 5vw;
@@ -84,7 +83,7 @@
     }
   }
 
-  @media (min-width: 1280px) {
+  @include respond(laptop) {
     &__container {
       h3 {
         font-size: variables.$xl;
@@ -97,7 +96,7 @@
   }
 
   // Desktop Large Screens
-  @media (min-width: 1400px) {
+  @include respond(desktop) {
     &__container {
       h3 {
         font-size: variables.$xl;
@@ -110,7 +109,7 @@
   }
 
   // XL Screens
-  @media (min-width: 1920px) {
+  @include respond(xl_desktop) {
     &__container {
       h3 {
         font-size: variables.$xl;
@@ -122,36 +121,6 @@
     }
   }
 }
-
-// .bg-hero {
-//   &__container {
-//     @media (min-width: 976px) {
-//     }
-
-//     // Desktop Medium Screens
-//     @media (min-width: 1280px) {
-//       //   font-size: variables.$xl;
-
-//       &__title-container {
-// font-size: variables.$xs;
-//       }
-//       //   > h2 {
-//       //     font-size: variables.$xl;
-//       //   }
-
-//       //   > p {
-//       //   }
-//     }
-
-//     // Desktop Large Screens
-//     @media (min-width: 1400px) {
-//     }
-
-//     // XL Screens
-//     @media (min-width: 1920px) {
-//     }
-//   }
-// }
 
 .navbar {
   &__container {

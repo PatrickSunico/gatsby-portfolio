@@ -1,6 +1,6 @@
 @mixin respond($breakpoint) {
   // $breakpoint is simply a variable that can have several values
-  /* 
+  /*
     576px  smphones
     768px for phablets
     992px for large devices/laptops
@@ -11,7 +11,7 @@
 
   // 576px smphones
   @if $breakpoint==smphones {
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 576px) {
       @content;
     }
   }
