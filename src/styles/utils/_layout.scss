@@ -1,4 +1,4 @@
-@use "./utils/variables" as variables;
+@use "./variables" as variables;
 /* Includes grid systems, responsive frameworks, wrappers, etc */
 
 /* 
@@ -17,8 +17,51 @@
 }
 
 .bg-hero {
-  @media (min-width: 776px) {
-    display: flex;
+  flex-direction: column;
+
+  &__left {
+    height: 300px;
+    margin: 20px 20px;
+  }
+
+  &__right {
+    height: 300px;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  @media (min-width: 576px) {
+    .bg-hero__cta-container {
+      width: 180px;
+    }
+    &__container {
+      h3 {
+        font-size: 6vw;
+      }
+
+      p {
+        font-size: 3.6vw;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+
+    &__left {
+      height: 100vh;
+      margin: 0;
+    }
+
+    &__right {
+      height: 100vh;
+    }
     &__container {
       h3 {
         font-size: 5vw;

@@ -1,12 +1,4 @@
 @use "../../styles/utils/variables" as var;
-
-// .vertical-center {
-//   margin: 0;
-//   position: absolute;
-//   top: 50%;
-//   -ms-transform: translateY(-50%);
-//   transform: translateY(-50%);
-// }
 .bg-hero {
   height: 100%;
   display: flex;
@@ -14,13 +6,11 @@
   &__left {
     display: flex;
     background-color: var.$hero-color-right;
-    height: 100vh;
   }
 
   &__right {
     display: flex;
     background-color: var.$hero-color-left;
-    height: 100vh;
   }
 
   &__title-container {
@@ -42,7 +32,6 @@
   }
 
   &__cta-container {
-    margin-top: 2em;
     display: flex;
     flex-direction: column;
   }
@@ -52,7 +41,8 @@
     text-align: center;
     color: var.$default-white;
     font-family: var.$GramatikaMedium;
-    // font-size: 1.2em;
+    font-weight: 500;
+    font-size: var.$buttonSize;
   }
 
   &__social-container {

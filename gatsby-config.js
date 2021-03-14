@@ -1,61 +1,57 @@
 module.exports = {
-  siteMetadata: {
-    title: `PS`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@PatrickSunico`,
-  },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-<<<<<<< HEAD
-        path: `${__dirname}/src/assets/images`,
-=======
-        path: `${__dirname}/src/assets`,
->>>>>>> 831e5ea163a12aafee7023c7288a559b51744994
-      },
+    siteMetadata: {
+        title: `PS`,
+        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+        author: `@PatrickSunico`
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets/,
+    plugins: [
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sass`,
+        `gatsby-plugin-postcss`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/assets/images`
+            }
         },
-      },
-    },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      // options: {
-      //   custom: {
-      //     families: [
-      //       "Gramatika-Light ,Gramatika-Regular, Gramatika-Medium, Gramatika-Black",
-      //     ],
-      //     urls: ["/fonts/fonts.css"],
-      //   },
-      // },
-    },
-    `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
-}
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `gatsby-starter-default`,
+                short_name: `starter`,
+                start_url: `/`,
+                background_color: `#663399`,
+                theme_color: `#663399`,
+                display: `minimal-ui`,
+                icon: `src/assets/images/gatsby-icon.png` // This path is relative to the root of the site.
+            }
+        },
+        {
+            resolve: "gatsby-plugin-react-svg",
+            options: {
+                rule: {
+                    include: /assets/
+                }
+            }
+        },
+        {
+            resolve: "gatsby-plugin-web-font-loader"
+            // options: {
+            //   custom: {
+            //     families: [
+            //       "Gramatika-Light ,Gramatika-Regular, Gramatika-Medium, Gramatika-Black",
+            //     ],
+            //     urls: ["/fonts/fonts.css"],
+            //   },
+            // },
+        },
+        `gatsby-plugin-gatsby-cloud`
+        // this (optional) plugin enables Progressive Web App + Offline functionality
+        // To learn more, visit: https://gatsby.dev/offline
+        // `gatsby-plugin-offline`,
+    ]
+};

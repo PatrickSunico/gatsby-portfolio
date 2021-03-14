@@ -1,4 +1,12 @@
-@use './utils/variables' as var;
-@use "./typography" as typography;
-@use "./base";
-@use "./layout";
+// @use './utils/variables' as var;
+// @use "./utils/mixins" as mixins;
+// @use "./typography" as typography;
+// @use "./base";
+// @use "./layout";
+
+@use "./utils/variables" as var;
+@use "./utils/mixins";
+@use "./typography/typography" as typography;
+@use "./base/base";
+@use "./utils/layout";
+@use "./components/components";
