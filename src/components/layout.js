@@ -31,7 +31,6 @@ const Layout = ({ children }) => {
     <>
       {/* <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <Hero />
-      {/* <Portfolio /> */}
       <div className="container">
         <div
           style={{

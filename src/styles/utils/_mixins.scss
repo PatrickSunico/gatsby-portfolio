@@ -1,0 +1,53 @@
+@mixin respond($breakpoint) {
+  // $breakpoint is simply a variable that can have several values
+  /* 
+    576px  smphones
+    768px for phablets
+    992px for large devices/laptops
+    1200px for large devices/laptops
+    1400 for laptop/desktop screens
+    1920 for xl desktop screens
+*/
+
+  // 576px smphones
+  @if $breakpoint==smphones {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  // 768px phablets or phones
+  @if $breakpoint==phablets {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  // 992px tablets
+  @if $breakpoint==tablets {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+
+  // 1200px for laptops
+  @if $breakpoint==laptop {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  // 1400 for xl desktop screens
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+
+  // 1920 for xl desktop screens
+  @if $breakpoint==xl_desktop {
+    @media only screen and (min-width: 1920px) {
+      @content;
+    }
+  }
+}

@@ -1,36 +1,138 @@
+@use "./utils/variables" as variables;
 /* Includes grid systems, responsive frameworks, wrappers, etc */
 
-// .vertical-center {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+/* 
+    576px portrait phones
+    768px for tablets
+    992px for laptops
+    1200px for large devices
+    1400 for laptop/desktop screens
+    1920 for xl desktop screens
+*/
 
-// horizontal-center {
-//   align-items: center;
-// }
-
-.custom-container {
+.hero {
   margin: 0 auto;
   display: flex;
   align-items: center;
+}
 
-  // Large Desktop Sizes
-  @media (max-width: 1400px) {
-    // width: 50%;
-    // width: 80%;
-    // min-width: 80%;
+.bg-hero {
+  @media (min-width: 776px) {
+    display: flex;
+    &__container {
+      h3 {
+        font-size: 5vw;
+      }
+
+      p {
+        font-size: 2.6vw;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    &__container {
+      h3 {
+        font-size: 5vw;
+      }
+
+      p {
+        font-size: 2.6vw;
+      }
+    }
   }
 
-  // Desktop Sizes
-  @media (max-width: 1280px) {
-    // width: 80%;
-    // min-width: 80%;
+  @media (min-width: 1280px) {
+    &__container {
+      h3 {
+        font-size: variables.$xl;
+      }
+
+      p {
+        font-size: variables.$l;
+      }
+    }
   }
 
-  // Medium Sizes
-  @media (max-width: 976px) {
-    // width: 80%;
-    // min-width: 80%;
+  // Desktop Large Screens
+  @media (min-width: 1400px) {
+    &__container {
+      h3 {
+        font-size: variables.$xl;
+      }
+
+      p {
+        font-size: variables.$l;
+      }
+    }
+  }
+
+  // XL Screens
+  @media (min-width: 1920px) {
+    &__container {
+      h3 {
+        font-size: variables.$xl;
+      }
+
+      p {
+        font-size: variables.$l;
+      }
+    }
+  }
+}
+
+// .bg-hero {
+//   &__container {
+//     @media (min-width: 976px) {
+//     }
+
+//     // Desktop Medium Screens
+//     @media (min-width: 1280px) {
+//       //   font-size: variables.$xl;
+
+//       &__title-container {
+// font-size: variables.$xs;
+//       }
+//       //   > h2 {
+//       //     font-size: variables.$xl;
+//       //   }
+
+//       //   > p {
+//       //   }
+//     }
+
+//     // Desktop Large Screens
+//     @media (min-width: 1400px) {
+//     }
+
+//     // XL Screens
+//     @media (min-width: 1920px) {
+//     }
+//   }
+// }
+
+.navbar {
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+
+    // Medium Sizes
+    @media (min-width: 976px) {
+      width: 80%;
+    }
+
+    // Desktop Medium Screens
+    @media (min-width: 1280px) {
+      width: 80%;
+    }
+
+    // Desktop Large Screens
+    @media (min-width: 1400px) {
+      width: 82%;
+    }
+
+    // XL Screens
+    @media (min-width: 1920px) {
+      width: 74%;
+    }
   }
 }

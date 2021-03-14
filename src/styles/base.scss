@@ -1,4 +1,4 @@
-@use './variables' as var;
+@use '../styles/utils/variables' as var;
 
 // Resets
 html,
@@ -134,27 +134,27 @@ body {
 }
 
 h1 {
-  font-size: var.$h1;
+  font-size: var.$xxl;
 }
 
 h2 {
-  font-size: var.$h2;
+  font-size: var.$xl;
 }
 
 h3 {
-  font-size: var.$h3;
+  font-size: var.$l;
 }
 
 h4 {
-  font-size: var.$h4;
+  font-size: var.$m;
 }
 
 h5 {
-  font-size: var.$h3;
+  font-size: var.$s;
 }
 
 h6 {
-  font-size: var.$h4;
+  font-size: var.$xs;
 }
 
 .space-top {
