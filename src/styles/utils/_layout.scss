@@ -11,140 +11,29 @@
     1920 for xl desktop screens
 */
 
-.hero {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.bg-hero {
-  flex-direction: column;
-  &__left {
-    height: 300px;
-    margin: 20px 20px;
-  }
-
-  &__right {
-    height: 300px;
-  }
-  h3 {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
-
-  @include respond(smphones) {
-    .bg-hero__cta-container {
-      width: 180px;
-    }
-    &__container {
-      h3 {
-        font-size: 6vw;
-      }
-
-      p {
-        font-size: 3.6vw;
-      }
-    }
-  }
-
-  @include respond(phablets) {
-    flex-direction: row;
-
-    &__left {
-      height: 100vh;
-      margin: 0;
-    }
-
-    &__right {
-      height: 100vh;
-    }
-    &__container {
-      h3 {
-        font-size: 5vw;
-      }
-
-      p {
-        font-size: 2.6vw;
-      }
-    }
-  }
-  @include respond(tablets) {
-    &__container {
-      h3 {
-        font-size: 5vw;
-      }
-
-      p {
-        font-size: 2.6vw;
-      }
-    }
-  }
-
-  @include respond(laptop) {
-    &__container {
-      h3 {
-        font-size: variables.$xl;
-      }
-
-      p {
-        font-size: variables.$l;
-      }
-    }
-  }
-
-  // Desktop Large Screens
-  @include respond(desktop) {
-    &__container {
-      h3 {
-        font-size: variables.$xl;
-      }
-
-      p {
-        font-size: variables.$l;
-      }
-    }
-  }
-
-  // XL Screens
-  @include respond(xl_desktop) {
-    &__container {
-      h3 {
-        font-size: variables.$xl;
-      }
-
-      p {
-        font-size: variables.$l;
-      }
-    }
-  }
-}
-
 .navbar {
-  &__container {
-    width: 100%;
-    margin: 0 auto;
+    &__container {
+        width: 100%;
+        margin: 0 auto;
 
-    // Medium Sizes
-    @media (min-width: 976px) {
-      width: 80%;
-    }
+        // Medium Sizes
+        @media (min-width: 976px) {
+            width: 80%;
+        }
 
-    // Desktop Medium Screens
-    @media (min-width: 1280px) {
-      width: 80%;
-    }
+        // Desktop Medium Screens
+        @media (min-width: 1280px) {
+            width: 80%;
+        }
 
-    // Desktop Large Screens
-    @media (min-width: 1400px) {
-      width: 82%;
-    }
+        // Desktop Large Screens
+        @media (min-width: 1400px) {
+            width: 82%;
+        }
 
-    // XL Screens
-    @media (min-width: 1920px) {
-      width: 74%;
+        // XL Screens
+        @media (min-width: 1920px) {
+            width: 74%;
+        }
     }
-  }
 }

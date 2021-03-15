@@ -1,70 +1,165 @@
 @use "../../styles/utils/variables" as var;
+@import "../../styles/utils/mixins";
 .bg-hero {
-  height: 100%;
-  display: flex;
-  position: relative;
-  &__left {
+    height: 100%;
     display: flex;
-    background-color: var.$hero-color-right;
-  }
-
-  &__right {
-    display: flex;
-    background-color: var.$hero-color-left;
-  }
-
-  &__title-container {
+    position: relative;
     flex-direction: column;
-  }
 
-  &__vertical-center {
-    display: flex;
-    justify-content: center;
-  }
+    h3 {
+        font-size: 2.8em;
+    }
 
-  &__title {
-    font-family: var.$GramatikaBlack;
-  }
+    p {
+        font-size: 1.6em;
+    }
+    &__left {
+        display: flex;
+        background-color: var.$hero-color-right;
+        height: 300px;
+        margin: 20px 20px;
+    }
 
-  &__caption {
-    font-family: var.$GramatikaMedium;
-    font-size: var.$caption;
-  }
+    &__right {
+        display: flex;
+        background-color: var.$hero-color-left;
+        height: 300px;
+    }
 
-  &__cta-container {
-    display: flex;
-    flex-direction: column;
-  }
+    &__title-container {
+        flex-direction: column;
+    }
 
-  &__resume-btn {
-    background-color: var.$pink;
-    text-align: center;
-    color: var.$default-white;
-    font-family: var.$GramatikaMedium;
-    font-weight: 500;
-    font-size: var.$buttonSize;
-  }
+    &__vertical-center {
+        display: flex;
+        justify-content: center;
+    }
 
-  &__social-container {
-    display: flex;
-    margin-top: 1.2em;
-    justify-content: space-between;
-  }
+    &__title {
+        font-family: var.$GramatikaBlack;
+    }
+
+    &__caption {
+        font-family: var.$GramatikaMedium;
+        font-size: var.$caption;
+    }
+
+    &__cta-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__resume-btn {
+        background-color: var.$pink;
+        text-align: center;
+        color: var.$default-white;
+        font-family: var.$GramatikaMedium;
+        font-weight: 500;
+        font-size: var.$buttonSize;
+    }
+
+    &__social-container {
+        display: flex;
+        margin-top: 1.2em;
+        justify-content: flex-start;
+    }
 }
 
-//   // Desktop Sizes
-//   @media (max-width: 1440px) {
-//     width: 1280px;
-//     min-width: 1280px;
-//   }
+.hero {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
 
-//   //   Medium Sized Laptops
-//   @media (max-width: 1280px) {
-//     width: 976px;
-//     min-width: 976px;
-//   }
+// Responsive
+.bg-hero {
+    @include respond(smphones) {
+        .bg-hero__cta-container {
+            width: 180px;
+        }
+        &__container {
+            h3 {
+                font-size: 6vw;
+            }
 
-//   @media (max-width: 976px) {
-//     width: 100%;
-//     min-width: 100%;
-//   }
+            p {
+                font-size: 3.6vw;
+            }
+        }
+    }
+
+    @include respond(phablets) {
+        flex-direction: row;
+
+        &__social-container {
+            justify-content: space-between;
+        }
+
+        &__left {
+            height: 100vh;
+            margin: 0;
+        }
+
+        &__right {
+            height: 100vh;
+        }
+        &__container {
+            h3 {
+                font-size: 5vw;
+            }
+
+            p {
+                font-size: 2.6vw;
+            }
+        }
+    }
+    @include respond(tablets) {
+        &__container {
+            h3 {
+                font-size: 5vw;
+            }
+
+            p {
+                font-size: 2.6vw;
+            }
+        }
+    }
+
+    @include respond(laptop) {
+        &__container {
+            h3 {
+                font-size: var.$xl;
+            }
+
+            p {
+                font-size: var.$l;
+            }
+        }
+    }
+
+    // Desktop Large Screens
+    @include respond(desktop) {
+        &__container {
+            h3 {
+                font-size: var.$xl;
+            }
+
+            p {
+                font-size: var.$l;
+            }
+        }
+    }
+
+    // XL Screens
+    @include respond(xl_desktop) {
+        &__container {
+            h3 {
+                font-size: var.$xl;
+            }
+
+            p {
+                font-size: var.$l;
+            }
+        }
+    }
+}
