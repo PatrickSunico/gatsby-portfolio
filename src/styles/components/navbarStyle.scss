@@ -1,9 +1,79 @@
-.logo {
-  font-family: "Gramatika-Black", sans-serif;
-  font-weight: 700;
-}
+@use "../../styles/utils/variables" as var;
+@import "../../styles/utils/mixins";
 
 // Navbar
 .navbar-style {
-  background: transparent;
+    background: transparent;
+}
+
+.navbar {
+    &__logo {
+        font-family: "Gramatika-Black", sans-serif;
+        font-weight: 700;
+        color: white;
+        @include respond(phablets) {
+            color: black;
+        }
+    }
+
+    &__inner-container {
+        margin: 0 1.8em;
+        @include respond(smphones) {
+            margin: 0 2em;
+        }
+
+        @include respond(phablets) {
+            margin: 0 2em;
+        }
+
+        @include respond(tablets) {
+            margin: 0 2em;
+        }
+
+        @include respond(desktop) {
+            margin: 0 5vw;
+        }
+
+        @include respond(xl_desktop) {
+            margin: 0 5vw;
+
+            // margin: 0 20em;
+        }
+    }
+
+    &__container {
+        background-color: #0d243c;
+        width: 100%;
+        margin: 0 auto;
+
+        // 576px smphones
+        @include respond(smphones) {
+            // width: 80%;
+        }
+
+        // 768px phablets or phones
+        @include respond(phablets) {
+            // width: 80%;
+            background-color: transparent;
+        }
+
+        // 992px tablets
+        @include respond(tablets) {
+            // width: 80%;
+        }
+
+        // 1200px for laptops
+        @include respond(laptop) {
+        }
+
+        // 1400 for xl desktop screens
+        @include respond(desktop) {
+            width: 100%;
+        }
+
+        // 1920 for xl desktop screens
+        @include respond(xl_desktop) {
+            width: 100%;
+        }
+    }
 }

@@ -5,15 +5,15 @@ import { Link } from "gatsby";
 const Navbar = ({ siteTitle }) => (
     <nav className="navbar navbar-style z-10 fixed w-full">
         <div className="navbar__container">
-            <div className="flex items-center justify-between py-3">
+            <div className="flex items-center justify-between py-3 navbar__inner-container">
                 {/* Logo */}
                 <div className="flex-shrink-0 flex items-center">
-                    <h1 className="text-3xl logo">PS</h1>
+                    <h1 className="text-3xl navbar__logo">PS</h1>
                 </div>
 
                 {/* Menu */}
                 <div className="items-end">
-                    <div className="flex space-x-10 xs:space-x-16 sm:space-x-16 md:space-x-18 lg:space-x-28">
+                    <div className="flex space-x-10 xs:space-x-10 sm:space-x-10 md:space-x-16 lg:space-x-28 xl:space-x-28">
                         <Link
                             to="/"
                             className="text-white	px-3 py-2 rounded-md text-sm font-medium"
