@@ -8,14 +8,13 @@
 
 .navbar {
     &__logo {
-        font-family: "Gramatika-Black", sans-serif;
+        font-family: var.$GramatikaBlack;
         font-weight: 700;
         color: white;
         @include respond(phablets) {
             color: black;
         }
     }
-
     &__inner-container {
         margin: 0 1.8em;
         @include respond(smphones) {

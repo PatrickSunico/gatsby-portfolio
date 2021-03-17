@@ -1,29 +1,10 @@
 @use "../../styles/utils/variables" as var;
 @import "../../styles/utils/mixins";
-.about {
-    height: 100%;
-    display: flex;
+
+.about-parent {
     position: relative;
-    flex-direction: column;
-    margin-top: 80px;
-    &__left {
-        display: flex;
-        height: 300px;
-        background-image: url("../../images/image-portrait.jpg") center center
-            no-repeat;
-        background-size: cover;
-    }
-
-    &__right {
-        display: flex;
-        height: 300px;
-        padding: 80px;
-    }
-
-    &__image-placement {
-        height: 100vh;
-        background-size: cover;
-    }
+    display: flex;
+    height: 100%;
 
     @include respond(xsphones) {
     }
@@ -32,17 +13,286 @@
     }
 
     @include respond(phablets) {
-        flex-direction: row;
-        &__left {
-            height: 100vh;
-            margin: 0;
-        }
-        &__right {
-            height: 100vh;
-            margin: 0;
-        }
     }
 
     @include respond(tablets) {
     }
+
+    @include respond(laptops) {
+    }
+
+    @include respond(desktop) {
+        // margin: 6em 5vw;
+        // width: 100%;
+    }
+
+    @include respond(xl_desktop) {
+        // width: 100%;
+    }
 }
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    &__left {
+        display: flex;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        // margin: 0 auto;
+        // margin-left: 5vw;
+        // margin: 0 5vw;
+
+        // height: 100vh;
+    }
+
+    &__description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 6em 5vw;
+    }
+
+    &__bg-pattern-left {
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 350px;
+        z-index: -1;
+        position: absolute;
+        background-position: top;
+    }
+
+    // Right
+    &__bg-pattern-right {
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 100%;
+        width: 300px;
+        z-index: -1;
+        position: absolute;
+        background-position: bottom;
+    }
+
+    // Left
+    &__right {
+        display: flex;
+        // padding: 80px;
+        position: relative;
+        @include respond(xsphones) {
+        }
+
+        @include respond(smphones) {
+        }
+
+        @include respond(phablets) {
+        }
+
+        @include respond(tablets) {
+        }
+
+        @include respond(laptops) {
+        }
+
+        @include respond(desktop) {
+            // margin: 6em 5vw;
+        }
+
+        @include respond(xl_desktop) {
+        }
+    }
+
+    // container Settings
+    @include respond(xsphones) {
+    }
+
+    @include respond(smphones) {
+    }
+
+    @include respond(phablets) {
+        flex-direction: row;
+    }
+
+    @include respond(tablets) {
+    }
+
+    @include respond(laptops) {
+    }
+
+    @include respond(desktop) {
+        // margin: 6em 5vw;
+    }
+
+    @include respond(xl_desktop) {
+    }
+}
+
+// // Parent Settings
+// .about-parent {
+//     position: relative;
+//     display: flex;
+//     height: 100%;
+
+//     @include respond(xsphones) {
+//         // height: 100%;
+//     }
+
+//     @include respond(smphones) {
+//         // height: 100%;
+//     }
+
+//     @include respond(phablets) {
+//         height: 100%;
+//     }
+// }
+
+// // Container Settings
+// .about-container {
+//     &__bg-pattern {
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         background-position: right;
+//         top: 0;
+//         right: 0;
+
+//         height: 100%;
+//         width: 100%;
+//         z-index: -2;
+//         position: absolute;
+//     }
+//     &__image-placement {
+//         // height: 100%;
+//         // width: 100%;
+//         // img {
+//         //     height: 100%;
+//         //     width: 100%;
+//         // }
+//     }
+
+//     &__description {
+//         margin: 0 1.8em 1.8em 1.8em;
+//         position: relative;
+
+//         h2 {
+//             font-size: 1.8em;
+//             line-height: 1.2em;
+//             font-family: var.$GramatikaBold;
+//         }
+
+//         p {
+//             text-align: justify;
+//             font-size: 1em;
+//             font-family: var.$GramatikaRegular;
+//         }
+//     }
+//     // height: 100vh;
+//     display: flex;
+//     position: relative;
+//     flex-direction: column;
+//     align-items: center;
+//     margin-top: 1.8em;
+
+//     &__left {
+//         display: flex;
+//     }
+
+//     &__right {
+//         display: flex;
+//         // padding: 80px;
+//         position: relative;
+//     }
+
+//     // Container Settings
+//     @include respond(xsphones) {
+//         margin-top: 0;
+//     }
+
+//     @include respond(smphones) {
+//         &__description {
+//             margin: 1.8em;
+//         }
+//     }
+
+//     @include respond(phablets) {
+//         // margin: 0 2em;
+//         flex-direction: row;
+
+//         &__description {
+//             h2 {
+//                 font-size: 4.2vw;
+//                 line-height: 1.2em;
+//             }
+
+//             p {
+//                 text-align: justify;
+//                 font-size: 1em;
+//                 font-family: var.$GramatikaRegular;
+//             }
+//         }
+
+//         &__left {
+//             height: 100%;
+//         }
+//         &__right {
+//             height: 100%;
+//         }
+//     }
+
+//     @include respond(tablets) {
+//         margin: 6em 2em;
+//         &__description {
+//             h2 {
+//                 font-size: 4.2vw;
+//                 line-height: 1.2em;
+//             }
+
+//             p {
+//                 text-align: justify;
+//                 font-size: 1em;
+//                 font-family: var.$GramatikaRegular;
+//             }
+//         }
+//     }
+
+//     @include respond(desktop) {
+//         margin: 6em 5vw;
+
+//         &__description {
+//             h2 {
+//                 font-size: 3.4vw;
+//                 line-height: 1.2em;
+//             }
+
+//             p {
+//                 text-align: justify;
+//                 font-size: 1.2em;
+//                 font-family: var.$GramatikaRegular;
+//             }
+//         }
+//     }
+
+//     @include respond(xl_desktop) {
+//         &__description {
+//             h2 {
+//                 font-size: 3.4vw;
+//                 line-height: 1.2em;
+//             }
+
+//             p {
+//                 text-align: justify;
+//                 font-size: 1.2em;
+//                 font-family: var.$GramatikaRegular;
+//             }
+//         }
+//         // margin: 6em 5vw;
+//     }
+// }
