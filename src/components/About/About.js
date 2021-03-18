@@ -6,38 +6,37 @@ import PatternBGRight from "../../images/bg-pattern-right.svg";
 
 const About = () => {
     return (
-        <section className="about-parent">
-            <div className="about-container">
+        <section className="about">
+            {/* Element */}
+            <div className="about__container">
                 {/* Left */}
-                <div
-                    className="flex-1 about-container__left"
-                    style={{ backgroundImage: `url(${ImagePortrait})` }}
-                >
-                    <div className="about-container__image-placement w-full">
+                <div className="flex-1 about__left">
+                    {/* <div className="about__container__image-placement w-full">
                         <img
                             src={ImagePortrait}
                             alt="portrait"
                             className="w-full"
                         />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Right */}
-                <div className="flex-1 about-container__right px-4">
-                    <div
-                        className="about-container__bg-pattern-left"
+                <div className="flex-1 about__right px-4">
+                    {/* <div
+                        className="about__container__bg-pattern-left"
                         style={{ backgroundImage: `url(${PatternBGLeft})` }}
                     ></div>
 
                     <div
-                        className="about-container__bg-pattern-right"
+                        className="about__container__bg-pattern-right"
                         style={{ backgroundImage: `url(${PatternBGRight})` }}
-                    ></div>
+                    ></div> */}
 
-                    <div className="about-container__description">
+                    <div className="about__description">
                         <h2>
-                            Hello, I’m Patrick Frontend Developer and UI
-                            Designer
+                            This is a custom feature of webpack
+                            {/* Hello, I’m Patrick Frontend Developer and UI
+                            Designer */}
                         </h2>
                         <br />
                         <br />
