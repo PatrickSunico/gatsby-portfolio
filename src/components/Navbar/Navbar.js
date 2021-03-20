@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 const Navbar = ({ siteTitle }) => (
     <nav className="navbar navbar-style z-10 fixed w-full">
-        <div className="navbar__container">
+        <div className="navbar__container ">
             <div className="flex items-center justify-between py-3 navbar__inner-container">
                 {/* Logo */}
                 <div className="flex-shrink-0 flex items-center">

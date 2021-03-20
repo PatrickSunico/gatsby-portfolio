@@ -1,0 +1,59 @@
+// $breakpoint is simply a variable that can have several values
+/*
+    375px xsphones
+    576px  smphones
+    768px for phablets
+    992px for large devices/laptops
+    1200px for large devices/laptops
+    1400 for laptop/desktop screens
+    1920 for xl desktop screens
+*/
+
+.width-375px {
+}
+
+.width-xs {
+}
+
+.width-sm {
+}
+
+.width-md {
+}
+
+.width-lg {
+}
+
+.width-xl {
+    width: 70%;
+    max-width: 80%;
+}
+
+.width-xxl {
+    width: 80%;
+    max-width: 90%;
+}
+
+.font-xs {
+    font-size: clamp(18px, 1.4vw, 20px);
+}
+
+.font-sm {
+    font-size: clamp(20px, 2vw, 40px);
+}
+
+.font-md {
+    font-size: clamp(1.5em, 2.6vw, 2.8em);
+}
+
+.font-lg {
+    font-size: clamp(2.4em, 4.8vw, 4em);
+}
+
+.font-xl {
+    font-size: clamp(2.8em, 5vw, 5em);
+}
+
+.font-xxl {
+    font-size: clamp(3em, 5vw, 6em);
+}

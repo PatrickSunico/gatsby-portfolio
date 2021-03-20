@@ -1,17 +1,17 @@
 @use "../../styles/utils/variables" as var;
 @import "../../styles/utils/mixins";
+@import "../../styles/utils/fluid";
+
 .bg-hero {
     height: 100%;
-    display: flex;
+    // display: flex;
     position: relative;
-    flex-direction: column;
-    h3 {
-        // font-size: 2em;
+    // flex-direction: column;
+    &__container {
+        display: flex;
+        flex-direction: row;
     }
 
-    p {
-        // font-size: 1em;
-    }
     &__left {
         display: flex;
         background-color: var.$hero-color-right;
@@ -40,7 +40,7 @@
 
     &__caption {
         font-family: var.$GramatikaMedium;
-        font-size: var.$caption;
+        // font-size: var.$caption;
     }
 
     &__cta-container {
@@ -80,13 +80,13 @@
 .bg-hero {
     @include respond(xsphones) {
         &__container {
-            h3 {
-                font-size: 2.8em;
-            }
+            // h3 {
+            //     font-size: 2.8em;
+            // }
 
-            p {
-                font-size: 1.6em;
-            }
+            // p {
+            //     font-size: 1.6em;
+            // }
         }
     }
     @include respond(smphones) {
@@ -94,13 +94,13 @@
             width: 180px;
         }
         &__container {
-            h3 {
-                font-size: 6vw;
-            }
+            // h3 {
+            //     font-size: 6vw;
+            // }
 
-            p {
-                font-size: 3.6vw;
-            }
+            // p {
+            //     font-size: 3.6vw;
+            // }
         }
     }
 
@@ -120,62 +120,62 @@
             height: 100vh;
         }
         &__container {
-            h3 {
-                font-size: 5.25vw;
-            }
+            // h3 {
+            //     font-size: 5.25vw;
+            // }
 
-            p {
-                font-size: 2.6vw;
-            }
+            // p {
+            //     font-size: 2.6vw;
+            // }
         }
     }
     @include respond(tablets) {
         &__container {
-            h3 {
-                font-size: 5.25vw;
-            }
+            // h3 {
+            //     font-size: 5.25vw;
+            // }
 
-            p {
-                font-size: 2.6vw;
-            }
+            // p {
+            //     font-size: 2.6vw;
+            // }
         }
     }
 
     @include respond(laptop) {
         &__container {
-            h3 {
-                font-size: var.$xl;
-            }
+            // h3 {
+            //     font-size: var.$xl;
+            // }
 
-            p {
-                font-size: var.$l;
-            }
+            // p {
+            //     font-size: var.$l;
+            // }
         }
     }
 
     // Desktop Large Screens
     @include respond(desktop) {
         &__container {
-            h3 {
-                font-size: var.$xl;
-            }
+            // h3 {
+            //     font-size: var.$xl;
+            // }
 
-            p {
-                font-size: var.$l;
-            }
+            // p {
+            //     font-size: var.$l;
+            // }
         }
     }
 
     // XL Screens
     @include respond(xl_desktop) {
         &__container {
-            h3 {
-                font-size: var.$xl;
-            }
+            // h3 {
+            //     font-size: var.$xl;
+            // }
 
-            p {
-                font-size: var.$l;
-            }
+            // p {
+            //     font-size: var.$l;
+            // }
         }
     }
 }

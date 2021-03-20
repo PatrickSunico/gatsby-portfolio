@@ -99,12 +99,12 @@
         }
         &__text-details {
             h2 {
-                font-size: var.$l;
+                // font-size: var.$l;
             }
 
             p {
                 font-family: var.$GramatikaRegular;
-                font-size: var.$xs;
+                // font-size: var.$xs;
             }
         }
     }
@@ -329,14 +329,14 @@
 //         position: relative;
 
 //         h2 {
-//             font-size: 1.8em;
+// font-size: 1.8em;
 //             line-height: 1.2em;
 //             font-family: var.$GramatikaBold;
 //         }
 
 //         p {
 //             text-align: justify;
-//             font-size: 1em;
+// font-size: 1em;
 //             font-family: var.$GramatikaRegular;
 //         }
 //     }
@@ -374,13 +374,13 @@
 
 //         &__description {
 //             h2 {
-//                 font-size: 4.2vw;
+// font-size: 4.2vw;
 //                 line-height: 1.2em;
 //             }
 
 //             p {
 //                 text-align: justify;
-//                 font-size: 1em;
+// font-size: 1em;
 //                 font-family: var.$GramatikaRegular;
 //             }
 //         }
@@ -397,13 +397,13 @@
 //         margin: 6em 2em;
 //         &__description {
 //             h2 {
-//                 font-size: 4.2vw;
+// font-size: 4.2vw;
 //                 line-height: 1.2em;
 //             }
 
 //             p {
 //                 text-align: justify;
-//                 font-size: 1em;
+// font-size: 1em;
 //                 font-family: var.$GramatikaRegular;
 //             }
 //         }
@@ -414,13 +414,13 @@
 
 //         &__description {
 //             h2 {
-//                 font-size: 3.4vw;
+// font-size: 3.4vw;
 //                 line-height: 1.2em;
 //             }
 
 //             p {
 //                 text-align: justify;
-//                 font-size: 1.2em;
+// font-size: 1.2em;
 //                 font-family: var.$GramatikaRegular;
 //             }
 //         }
@@ -429,13 +429,13 @@
 //     @include respond(xl_desktop) {
 //         &__description {
 //             h2 {
-//                 font-size: 3.4vw;
+// font-size: 3.4vw;
 //                 line-height: 1.2em;
 //             }
 
 //             p {
 //                 text-align: justify;
-//                 font-size: 1.2em;
+// font-size: 1.2em;
 //                 font-family: var.$GramatikaRegular;
 //             }
 //         }
