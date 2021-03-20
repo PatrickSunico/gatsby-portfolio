@@ -6,11 +6,11 @@
     position: relative;
     flex-direction: column;
     h3 {
-        font-size: 2em;
+        // font-size: 2em;
     }
 
     p {
-        font-size: 1em;
+        // font-size: 1em;
     }
     &__left {
         display: flex;
@@ -121,7 +121,7 @@
         }
         &__container {
             h3 {
-                font-size: 5vw;
+                font-size: 5.25vw;
             }
 
             p {
@@ -132,7 +132,7 @@
     @include respond(tablets) {
         &__container {
             h3 {
-                font-size: 5vw;
+                font-size: 5.25vw;
             }
 
             p {

@@ -2,24 +2,154 @@
 @import "../../styles/utils/mixins";
 // Block
 .about {
-    // Parent Layout
-    &__container {
-        background-color: red;
-    }
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
-    // Layout
+    // Layout Elements
     &__left {
+        // margin: 0 0 5.25vw 5.25vw;
     }
 
     &__right {
+        // margin: 0 5vw;
     }
 
     // Elements
     &__description {
+        width: 100%;
+        padding: 20px;
     }
 
-    // &--left {
-    // }
+    &__text-details {
+        h2 {
+            // font-size: 2.2em;
+        }
+
+        p {
+            font-family: var.$GramatikaRegular;
+            // font-size: 1.2em;
+        }
+    }
+
+    // Image Portrait
+    &__image-placement {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    // BG Image
+    &__bg-pattern-left {
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 300px;
+        z-index: -1;
+        position: absolute;
+        background-position: bottom;
+        display: none;
+    }
+
+    // // Right
+    &__bg-pattern-right {
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 350px;
+        z-index: -1;
+        position: absolute;
+        background-position: top;
+        display: none;
+    }
+
+    @include respond(xsphones) {
+    }
+
+    @include respond(smphones) {
+    }
+
+    @include respond(phablets) {
+    }
+
+    @include respond(tablets) {
+        // display: flex;
+        // flex-direction: row;
+    }
+
+    @include respond(laptops) {
+        // flex-direction: row;
+    }
+
+    @include respond(desktop) {
+        &__image-placement {
+            width: 90%;
+            height: 100%;
+        }
+        &__description {
+            width: 80%;
+            padding: 0;
+        }
+        &__text-details {
+            h2 {
+                font-size: var.$l;
+            }
+
+            p {
+                font-family: var.$GramatikaRegular;
+                font-size: var.$xs;
+            }
+        }
+    }
+
+    @include respond(xl_desktop) {
+        // width: 100%;
+    }
+
+    /*Container Layout*/
+    &__container {
+        // background-color: red;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        // margin-top: 5em;
+        position: relative;
+        margin: 5.25vw 5.25vw;
+
+        // Container Breakpoints
+        @include respond(xsphones) {
+        }
+
+        @include respond(smphones) {
+        }
+
+        @include respond(phablets) {
+        }
+
+        @include respond(tablets) {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @include respond(laptops) {
+            // flex-direction: row;
+        }
+
+        @include respond(desktop) {
+            margin: 5.25vw 5.25vw;
+        }
+
+        @include respond(xl_desktop) {
+            // width: 100%;
+        }
+    }
 }
 
 // .about-parent {

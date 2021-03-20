@@ -30,11 +30,11 @@
         }
 
         @include respond(desktop) {
-            margin: 0 5vw;
+            margin: 0 5.25vw;
         }
 
         @include respond(xl_desktop) {
-            margin: 0 5vw;
+            margin: 0 5.25vw;
 
             // margin: 0 20em;
         }
