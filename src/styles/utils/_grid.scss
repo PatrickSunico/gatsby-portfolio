@@ -1,0 +1,82 @@
+@use "sass:map";
+@import "../utils/mixins";
+// $breakpoint is simply a variable that can have several values
+/*
+    375px xsphones
+    576px  smphones
+    768px for phablets
+    992px for large devices/laptops
+    1200px for large devices/laptops
+    1400 for laptop/desktop screens
+    1920 for xl desktop screens
+*/
+
+$grid-breakpoints: ();
+$container-sizes: (
+    "reset": 100%,
+    // 448px
+    "xs": 28rem,
+    // 800px
+    "sm": 50rem,
+    // 1280px
+    "md": 80rem,
+    // 1440px
+    "lg": 90rem,
+    // 1600px,
+    "xl": 100rem,
+    // 1920px
+    "xxl": 120rem
+);
+$container-max-widths: (
+    "reset": 100%,
+    // 400px
+    "xs": 28rem,
+    // 800px
+    "sm": 50rem,
+    // 1280px
+    "md": 80rem,
+    // 1440px
+    "lg": 90rem,
+    // 1600px,
+    "xl": 100rem,
+    // 1920px
+    "xxl": 120rem
+);
+
+// XS
+.layout-container {
+    width: 90%;
+    max-width: map.get($container-max-widths, "reset");
+    margin: 0 auto;
+
+    // XL
+    @include respond(xl) {
+        width: 80%;
+        // max-width: map.get($container-max-widths, "sm");
+
+        // max-width: map.get($container-max-widths, "xl");
+    }
+    // MD
+    @include respond(md) {
+        max-width: map.get($container-max-widths, "md");
+    }
+}
+
+div[class^="column-"] {
+    background: peru;
+    border: 1px solid powderblue;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.layout-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+$columns: 12;
+@for $i from 1 through $columns {
+    .column-#{$i} {
+        flex: 0 0 100% / $columns * $i;
+    }
+}

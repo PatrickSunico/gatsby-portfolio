@@ -1,38 +1,5 @@
-// $breakpoint is simply a variable that can have several values
-/*
-    375px xsphones
-    576px  smphones
-    768px for phablets
-    992px for large devices/laptops
-    1200px for large devices/laptops
-    1400 for laptop/desktop screens
-    1920 for xl desktop screens
-*/
-
-.width-375px {
-}
-
-.width-xs {
-}
-
-.width-sm {
-}
-
-.width-md {
-}
-
-.width-lg {
-}
-
-.width-xl {
-    width: 70%;
-    max-width: 80%;
-}
-
-.width-xxl {
-    width: 80%;
-    max-width: 90%;
-}
+@use "sass:map";
+@import "../utils/mixins";
 
 .font-xs {
     font-size: clamp(18px, 1.4vw, 20px);

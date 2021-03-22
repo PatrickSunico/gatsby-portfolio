@@ -2,11 +2,12 @@
 @import "../../styles/utils/mixins";
 
 // Navbar
-.navbar-style {
-    background: transparent;
-}
+// .navbar-style {
+// }
 
 .navbar {
+    background: #0d243c;
+
     &__logo {
         font-family: var.$GramatikaBlack;
         font-weight: 700;
@@ -14,6 +15,10 @@
         @include respond(phablets) {
             color: black;
         }
+    }
+
+    @include respond(phablets) {
+        background: transparent;
     }
     // &__inner-container {
     //     margin: 0 1.8em;
@@ -41,7 +46,7 @@
     // }
 
     &__container {
-        background-color: #0d243c;
+        // background-color: #0d243c;
         // width: 100%;
         margin: 0 auto;
 

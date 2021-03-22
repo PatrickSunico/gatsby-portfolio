@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import About from "../components/About/About";
-// import Portfolio from "../components/Portfolio/Portfolio"
+import Portfolio from "../components/Portfolio/Portfolio";
 
 import "../styles/styles.scss";
 
@@ -33,6 +33,7 @@ const Layout = ({ children }) => {
             <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} />
             <Hero />
             <About />
+            <Portfolio />
         </>
     );
 };
