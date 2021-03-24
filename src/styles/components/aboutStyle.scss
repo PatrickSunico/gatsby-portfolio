@@ -7,13 +7,13 @@
     display: flex;
     flex-direction: column;
 
-    // Layout Elements
     &__left {
         // margin: 0 0 5.25vw 5.25vw;
     }
 
     &__right {
         // margin: 0 5vw;
+        padding: 20px;
     }
 
     // Elements
@@ -44,29 +44,11 @@
 
     // BG Image
     &__bg-pattern-left {
-        background-size: contain;
-        background-repeat: no-repeat;
-        left: 0;
-        bottom: 0;
-        height: 100%;
-        width: 300px;
-        z-index: -1;
-        position: absolute;
-        background-position: bottom;
         display: none;
     }
 
     // // Right
     &__bg-pattern-right {
-        background-size: contain;
-        background-repeat: no-repeat;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: 350px;
-        z-index: -1;
-        position: absolute;
-        background-position: top;
         display: none;
     }
 
@@ -77,15 +59,38 @@
     }
 
     @include respond(phablets) {
+        &__bg-pattern-left {
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 300px;
+            z-index: -1;
+            position: absolute;
+            background-position: bottom;
+            display: block;
+        }
+
+        // // Right
+        &__bg-pattern-right {
+            background-size: contain;
+            background-repeat: no-repeat;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 350px;
+            z-index: -1;
+            position: absolute;
+            background-position: top;
+            display: block;
+        }
     }
 
     @include respond(tablets) {
-        // display: flex;
-        // flex-direction: row;
     }
 
-    @include respond(laptops) {
-        // flex-direction: row;
+    @include respond(laptop) {
     }
 
     @include respond(desktop) {
@@ -99,12 +104,10 @@
         }
         &__text-details {
             h2 {
-                // font-size: var.$l;
             }
 
             p {
                 font-family: var.$GramatikaRegular;
-                // font-size: var.$xs;
             }
         }
     }
@@ -114,14 +117,14 @@
     }
 
     /*Container Layout*/
-    &__container {
+    &-container {
         // background-color: red;
         height: 100vh;
         display: flex;
         flex-direction: column;
         // margin-top: 5em;
         position: relative;
-
+        margin: 7vw auto;
         // Container Breakpoints
         @include respond(xsphones) {
         }
