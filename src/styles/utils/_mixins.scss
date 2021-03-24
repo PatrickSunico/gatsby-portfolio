@@ -11,49 +11,49 @@
 */
 
     @if $breakpoint==xsphones {
-        @media only screen and (min-width: 375px) {
+        @media only screen and (min-width: 24rem) {
             @content;
         }
     }
 
     // 576px smphones
     @if $breakpoint==smphones {
-        @media only screen and (min-width: 576px) {
+        @media only screen and (min-width: 36rem) {
             @content;
         }
     }
 
     // 768px phablets or phones
     @if $breakpoint==phablets {
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 48rem) {
             @content;
         }
     }
 
     // 992px tablets
     @if $breakpoint==tablets {
-        @media only screen and (min-width: 992px) {
+        @media only screen and (min-width: 62rem) {
             @content;
         }
     }
 
     // 1200px for laptops
     @if $breakpoint==laptop {
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: 75rem) {
             @content;
         }
     }
 
     // 1400 for xl desktop screens
     @if $breakpoint==desktop {
-        @media only screen and (min-width: 1400px) {
+        @media only screen and (min-width: 100rem) {
             @content;
         }
     }
 
     // 1920 for xl desktop screens
     @if $breakpoint==xl_desktop {
-        @media only screen and (min-width: 1920px) {
+        @media only screen and (min-width: 120rem) {
             @content;
         }
     }

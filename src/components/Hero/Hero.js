@@ -10,12 +10,28 @@ const Hero = () => {
     return (
         <>
             <div className="bg-hero">
-                <div className="bg-hero__container ">
+                <div className="">
+                    <div className="l-row l-column">
+                        <div className="column-6 bg-hero__left">
+                            <div className="bg-hero__title-container bg-hero__vertical-center ">
+                                <h3 className="bg-hero__title space-bottom font-xxl">
+                                    Abraham Lincoln
+                                </h3>
+                                <p className="bg-hero__caption space-bottom font-md">
+                                    Frontend Developer & UI Designer
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="column-6 bg-hero__right">Test</div>
+                    </div>
+                </div>
+                {/* <div className="bg-hero__container ">
                     <div className="flex-1 bg-hero__left ">
                         <div className="hero bg-hero__container ">
                             <div className="bg-hero__title-container bg-hero__vertical-center ">
                                 <h3 className="bg-hero__title space-bottom font-xxl">
-                                    Patrick Sunico
+                                    Test
                                 </h3>
                                 <p className="bg-hero__caption space-bottom font-md">
                                     Frontend Developer & UI Designer
@@ -40,7 +56,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex-1 bg-hero__right p-4">Test</div>
-                </div>
+                </div> */}
             </div>
         </>
     );

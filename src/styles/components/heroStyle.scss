@@ -3,13 +3,14 @@
 @import "../../styles/utils/fluid";
 
 .bg-hero {
-    height: 100%;
-    // display: flex;
     position: relative;
-    // flex-direction: column;
+    height: 100%;
     &__container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        // @include respond(phablets) {
+        //     flex-direction: row;
+        // }
     }
 
     &__left {
@@ -17,6 +18,9 @@
         background-color: var.$hero-color-right;
         height: 340px;
         margin-top: 60px;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
     }
 
     &__right {
@@ -26,12 +30,18 @@
     }
 
     &__title-container {
+        display: flex;
         flex-direction: column;
+
+        height: 300px;
     }
 
     &__vertical-center {
         display: flex;
         justify-content: center;
+        margin: 0 auto;
+        // text-align: center;
+        // align-items: center;
     }
 
     &__title {
@@ -65,48 +75,17 @@
             justify-content: flex-start;
         }
     }
-}
 
-.hero {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    @include respond(xsphones) {
-    }
-}
-
-// Responsive
-.bg-hero {
-    @include respond(xsphones) {
-        &__container {
-            // h3 {
-            //     font-size: 2.8em;
-            // }
-
-            // p {
-            //     font-size: 1.6em;
-            // }
-        }
-    }
     @include respond(smphones) {
-        .bg-hero__cta-container {
-            width: 180px;
-        }
-        &__container {
-            // h3 {
-            //     font-size: 6vw;
-            // }
-
-            // p {
-            //     font-size: 3.6vw;
-            // }
+        &__title-container {
+            // width: 35.8rem;
         }
     }
 
     @include respond(phablets) {
-        flex-direction: row;
-
+        &__vertical-center {
+            text-align: left;
+        }
         &__social-container {
             justify-content: space-between;
         }
@@ -119,63 +98,193 @@
         &__right {
             height: 100vh;
         }
-        &__container {
-            // h3 {
-            //     font-size: 5.25vw;
-            // }
 
-            // p {
-            //     font-size: 2.6vw;
-            // }
-        }
-    }
-    @include respond(tablets) {
-        &__container {
-            // h3 {
-            //     font-size: 5.25vw;
-            // }
-
-            // p {
-            //     font-size: 2.6vw;
-            // }
+        &__title-container {
+            width: 70%;
+            max-width: 100%;
         }
     }
 
-    @include respond(laptop) {
-        &__container {
-            // h3 {
-            //     font-size: var.$xl;
-            // }
-
-            // p {
-            //     font-size: var.$l;
-            // }
-        }
-    }
-
-    // Desktop Large Screens
-    @include respond(desktop) {
-        &__container {
-            // h3 {
-            //     font-size: var.$xl;
-            // }
-
-            // p {
-            //     font-size: var.$l;
-            // }
-        }
-    }
-
-    // XL Screens
-    @include respond(xl_desktop) {
-        &__container {
-            // h3 {
-            //     font-size: var.$xl;
-            // }
-
-            // p {
-            //     font-size: var.$l;
-            // }
+    @include respond(laptops) {
+        &__title-container {
+            // width: 35.8rem;
         }
     }
 }
+
+// .bg-hero {
+//     height: 100%;
+//     position: relative;
+// &__container {
+//     display: flex;
+//     // flex-direction: column;
+//     // @include respond(phablets) {
+//     //     flex-direction: row;
+//     // }
+// }
+
+// &__left {
+//     display: flex;
+//     background-color: var.$hero-color-right;
+//     height: 340px;
+//     margin-top: 60px;
+// }
+
+// &__right {
+//     display: flex;
+//     background-color: var.$hero-color-left;
+//     height: 300px;
+// }
+
+// &__title-container {
+//     flex-direction: column;
+// }
+
+// &__vertical-center {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// &__title {
+//     font-family: var.$GramatikaBlack;
+// }
+
+// &__caption {
+//     font-family: var.$GramatikaMedium;
+//     // font-size: var.$caption;
+// }
+
+// &__cta-container {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// &__resume-btn {
+//     background-color: var.$pink;
+//     text-align: center;
+//     color: var.$default-white;
+//     font-family: var.$GramatikaMedium;
+//     font-weight: 500;
+//     font-size: var.$buttonSize;
+// }
+
+// &__social-container {
+//     display: flex;
+//     margin-top: 1.2em;
+//     justify-content: space-between;
+//     @include respond(xsphones) {
+//         justify-content: flex-start;
+//     }
+// }
+// }
+
+// .hero {
+//     margin: 0 auto;
+//     display: flex;
+//     align-items: center;
+//     padding: 20px;
+//     @include respond(xsphones) {
+//     }
+// }
+
+// // Responsive
+// .bg-hero {
+//     @include respond(xsphones) {
+//         &__container {
+//             // h3 {
+//             //     font-size: 2.8em;
+//             // }
+
+//             // p {
+//             //     font-size: 1.6em;
+//             // }
+//         }
+//     }
+//     @include respond(smphones) {
+//         .bg-hero__cta-container {
+//             width: 180px;
+//         }
+//         &__container {
+//             // h3 {
+//             //     font-size: 6vw;
+//             // }
+
+//             // p {
+//             //     font-size: 3.6vw;
+//             // }
+//         }
+//     }
+
+// @include respond(phablets) {
+//     &__social-container {
+//         justify-content: space-between;
+//     }
+
+//     &__left {
+//         height: 100vh;
+//         margin: 0;
+//     }
+
+//     &__right {
+//         height: 100vh;
+//     }
+//     &__container {
+//         // h3 {
+//         //     font-size: 5.25vw;
+//         // }
+
+//         // p {
+//         //     font-size: 2.6vw;
+//         // }
+//     }
+// }
+//     @include respond(tablets) {
+//         &__container {
+//             // h3 {
+//             //     font-size: 5.25vw;
+//             // }
+
+//             // p {
+//             //     font-size: 2.6vw;
+//             // }
+//         }
+//     }
+
+//     @include respond(laptop) {
+//         &__container {
+//             // h3 {
+//             //     font-size: var.$xl;
+//             // }
+
+//             // p {
+//             //     font-size: var.$l;
+//             // }
+//         }
+//     }
+
+//     // Desktop Large Screens
+//     @include respond(desktop) {
+//         &__container {
+//             // h3 {
+//             //     font-size: var.$xl;
+//             // }
+
+//             // p {
+//             //     font-size: var.$l;
+//             // }
+//         }
+//     }
+
+//     // XL Screens
+//     @include respond(xl_desktop) {
+//         &__container {
+//             // h3 {
+//             //     font-size: var.$xl;
+//             // }
+
+//             // p {
+//             //     font-size: var.$l;
+//             // }
+//         }
+//     }
+// }

@@ -10,68 +10,102 @@
     1400 for laptop/desktop screens
     1920 for xl desktop screens
 */
+$container-widths: (
+    reset: 100%,
+    xs: 564px,
+    sm: 768px,
+    md: 1024px,
+    lg: 1200px,
+    xl: 1400px,
+    xxl: 1600px
+);
 
-$grid-breakpoints: ();
-$container-sizes: (
-    "reset": 100%,
-    // 448px
-    "xs": 28rem,
-    // 800px
-    "sm": 50rem,
-    // 1280px
-    "md": 80rem,
-    // 1440px
-    "lg": 90rem,
-    // 1600px,
-    "xl": 100rem,
-    // 1920px
-    "xxl": 120rem
-);
-$container-max-widths: (
-    "reset": 100%,
-    // 400px
-    "xs": 28rem,
-    // 800px
-    "sm": 50rem,
-    // 1280px
-    "md": 80rem,
-    // 1440px
-    "lg": 90rem,
-    // 1600px,
-    "xl": 100rem,
-    // 1920px
-    "xxl": 120rem
-);
+$reset: 100%;
+$breakpoint-xs: 28rem;
+$breakpoint-sm: 50rem;
+$breakpoint-md: 80rem;
+$breakpoint-lg: 90rem;
+$breakpoint-xl: 100rem;
+$breakpoint-xxl: 120rem;
+
+$container-xs: 28rem;
+$container-sm: 50rem;
+$container-md: 80rem;
+$container-lg: 90rem;
+$container-xl: 100rem;
+$container-xxl: 120rem;
 
 // XS
-.layout-container {
+.l-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@include respond(phablets) {
+    .l-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+.l-container {
     width: 90%;
-    max-width: map.get($container-max-widths, "reset");
+    max-width: 90%;
     margin: 0 auto;
 
-    // XL
-    @include respond(xl) {
-        width: 80%;
-        // max-width: map.get($container-max-widths, "sm");
-
-        // max-width: map.get($container-max-widths, "xl");
+    // xsphones 24rem
+    @include respond(xsphones) {
     }
-    // MD
-    @include respond(md) {
-        max-width: map.get($container-max-widths, "md");
+
+    // Phones 36rem
+    @include respond(smphones) {
+    }
+
+    // Phablets 48rem
+    @include respond(phablets) {
+        max-width: 85%;
+        width: 85%;
+    }
+
+    // Tablets 62rem
+    @include respond(tablets) {
+        // width: 62rem;
+        // max-width: 100%;
+        // max-width: map.get($container-max-widths, "md");
+        // background-color: red;
+    }
+
+    // Laptops 75rem
+    @include respond(laptop) {
+        // width: 75rem;
+        // max-width: 100%;
+        // width: 900px;
+        // width: $container-lg;
+        // max-width: $container-lg;
+        // width: 80rem;
+    }
+    // Desktop 100rem
+    @include respond(desktop) {
+        // width: $container-xl;
+        // max-width: $container-lg;
+        // width: 90%;
+        // max-width: 90%;
+        // background-color: blue;
+    }
+
+    // XXL 120rem
+    @include respond(xl_desktop) {
+        // width: 90%;
+        width: 80%;
+        max-width: 80%;
     }
 }
 
 div[class^="column-"] {
-    background: peru;
-    border: 1px solid powderblue;
     text-align: center;
     padding: 1rem 0;
-}
-
-.layout-row {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 $columns: 12;

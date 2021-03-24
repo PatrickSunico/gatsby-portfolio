@@ -18,7 +18,7 @@ const About = () => {
             ></div>
 
             {/* Element */}
-            <div className="about__container">
+            <div className="about__container l-container">
                 {/* Left */}
                 <div className="flex-1 about__left">
                     <div

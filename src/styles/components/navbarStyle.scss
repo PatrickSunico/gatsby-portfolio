@@ -7,7 +7,6 @@
 
 .navbar {
     background: #0d243c;
-
     &__logo {
         font-family: var.$GramatikaBlack;
         font-weight: 700;
@@ -46,10 +45,7 @@
     // }
 
     &__container {
-        // background-color: #0d243c;
-        // width: 100%;
         margin: 0 auto;
-
         // 576px smphones
         @include respond(smphones) {
             // width: 80%;

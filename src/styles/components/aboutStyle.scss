@@ -121,7 +121,6 @@
         flex-direction: column;
         // margin-top: 5em;
         position: relative;
-        margin: 5.25vw 5.25vw;
 
         // Container Breakpoints
         @include respond(xsphones) {
@@ -143,7 +142,6 @@
         }
 
         @include respond(desktop) {
-            margin: 5.25vw 5.25vw;
         }
 
         @include respond(xl_desktop) {

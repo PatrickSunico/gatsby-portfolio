@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 const Portfolio = (props) => {
     return (
-        <div className="layout-container">
-            <div className="layout-row">
+        <div className="l-container">
+            <div className="l-row">
                 <div className="column-12"></div>
                 <div className="column-6">6</div>
 
