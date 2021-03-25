@@ -15,7 +15,7 @@ const Navbar = ({ siteTitle }) => (
 
                 {/* Menu */}
                 <div className="items-end">
-                    <div className="flex space-x-10 xs:space-x-16 sm:space-x-16 md:space-x-18 lg:space-x-28">
+                    <div className="flex space-x-10 xs:space-x-16 sm:space-x-10 md:space-x-10 lg:space-x-20 xl:space-x-28">
                         <Link
                             to="/"
                             className="text-white	px-3 py-2 rounded-md text-sm font-medium"

@@ -1,26 +1,28 @@
-@use "sass:map";
-@import "../utils/mixins";
+// @use "sass:map";
+// @import "../utils/mixins";
 
-.font-xs {
-    font-size: clamp(18px, 1.4vw, 20px);
-}
+// .font {
+//     &__xs {
+//         font-size: clamp(18px, 1.4vw, 20px);
+//     }
 
-.font-sm {
-    font-size: clamp(20px, 2vw, 40px);
-}
+//     &__sm {
+//         font-size: clamp(20px, 2vw, 40px);
+//     }
 
-.font-md {
-    font-size: clamp(1.5em, 2.6vw, 2.8em);
-}
+//     &__md {
+//         font-size: clamp(1.5em, 2.6vw, 2.8em);
+//     }
 
-.font-lg {
-    font-size: clamp(2.4em, 4.8vw, 4em);
-}
+//     &__lg {
+//         font-size: clamp(2.4em, 4.8vw, 4em);
+//     }
 
-.font-xl {
-    font-size: clamp(2.8em, 5vw, 5em);
-}
+//     &__xl {
+//         font-size: clamp(2.8em, 5vw, 5em);
+//     }
 
-.font-xxl {
-    font-size: clamp(3em, 5vw, 6em);
-}
+//     &__xxl {
+//         font-size: clamp(3em, 5vw, 6em);
+//     }
+// }

@@ -82,7 +82,7 @@
         }
     }
 
-    @include respond(phablets) {
+    @include respond(tablets) {
         &__vertical-center {
             text-align: left;
         }
@@ -105,9 +105,10 @@
         }
     }
 
-    @include respond(laptops) {
+    @include respond(desktop) {
         &__title-container {
-            // width: 35.8rem;
+            width: 60%;
+            max-width: 100%;
         }
     }
 }

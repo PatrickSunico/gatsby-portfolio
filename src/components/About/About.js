@@ -7,25 +7,15 @@ import PatternBGRight from "../../images/bg-pattern-right.svg";
 const About = () => {
     return (
         <section className="about">
-            <div
-                className="about__bg-pattern-left"
-                style={{ backgroundImage: `url(${PatternBGLeft})` }}
-            ></div>
-
-            <div
-                className="about__bg-pattern-right"
-                style={{ backgroundImage: `url(${PatternBGRight})` }}
-            ></div>
-
             {/* Element */}
             <div className="about-container l-container">
                 {/* Left */}
-                <div className="flex-1 about__left">
+                <div className="flex-1 about-left">
                     <div
-                        className="about__image-placement"
+                        className="about__bg-image"
                         style={{ backgroundImage: `url(${ImagePortrait})` }}
                     ></div>
-                    {/* <div className="about__container__image-placement w-full">
+                    {/* <div className="about__image w-full">
                         <img
                             src={ImagePortrait}
                             alt="portrait"
@@ -35,22 +25,20 @@ const About = () => {
                 </div>
 
                 {/* Right */}
-                <div className="flex-1 about__right ">
-                    <div className="about__description">
+                <div className="flex-1 about-right ">
+                    <div className="about-description">
                         <div className="about__text-details">
-                            <h2 className="font-lg">
+                            <h2 className="font-size__lg">
                                 Hello, I’m Patrick Frontend Developer and UI
                                 Designer
                             </h2>
                             <br />
                             <br />
-                            <br />
-                            <p className="font-xs">
+                            <p className="font-size__xs">
                                 I'm a dreamer and a web aficionado, I like to
                                 implement ideas into an actual product and build
                                 up on that idea to make it more robust and
                                 scalable when it comes to websites,
-                                <br />
                                 <br />
                                 <br />
                                 Here you can see a selection of my best web
@@ -60,7 +48,100 @@ const About = () => {
                             </p>
                         </div>
 
-                        <div className="about__experience"></div>
+                        <div className="about-experience-container">
+                            <h3 className="font-size__xs font-weight__700">
+                                Experience
+                            </h3>
+                            <div className="about-experience">
+                                <div className="about-experience-block l-row">
+                                    {/* Position */}
+                                    <div className="about-experience-position column-6">
+                                        <h4 className="font-size__xs font-weight__500">
+                                            Catalyst
+                                        </h4>
+                                        <p className="font-weight__100">
+                                            Frontend Developer / UI Developer
+                                        </p>
+                                    </div>
+
+                                    {/* Date */}
+                                    <div className="about-experience-date column-6">
+                                        <h4 className="font-size__xs font-weight__100">
+                                            2017-Present
+                                        </h4>
+                                        <p className="font-weight__100">
+                                            Doha, Qatar
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="about-experience-block l-row">
+                                    {/* Position */}
+                                    <div className="about-experience-position column-6">
+                                        <h4 className="font-size__xs font-weight__500">
+                                            Chariot Solutions
+                                        </h4>
+                                        <p className="font-weight__100">
+                                            Frontend Developer / UI Developer
+                                        </p>
+                                    </div>
+
+                                    {/* Date */}
+                                    <div className="about-experience-date column-6">
+                                        <h4 className="font-size__xs font-weight__100">
+                                            2016-2017
+                                        </h4>
+                                        <p className="font-weight__100">
+                                            Doha, Qatar
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="about-experience-block l-row">
+                                    {/* Position */}
+                                    <div className="about-experience-position column-6">
+                                        <h4 className="font-size__xs font-weight__500">
+                                            Mannai Corporation
+                                        </h4>
+                                        <p className="font-weight__100">
+                                            Junior Developer / Designer
+                                        </p>
+                                    </div>
+
+                                    {/* Date */}
+                                    <div className="about-experience-date column-6">
+                                        <h4 className="font-size__xs font-weight__100">
+                                            2016-2017
+                                        </h4>
+                                        <p className="font-weight__100">
+                                            Doha, Qatara
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="about-experience-block l-row">
+                                    {/* Position */}
+                                    <div className="about-experience-position column-6">
+                                        <h4 className="font-size__xs font-weight__500">
+                                            Web Outsourcing Gateway
+                                        </h4>
+                                        <p className="font-weight__100">
+                                            Junior Developer / Designer
+                                        </p>
+                                    </div>
+
+                                    {/* Date */}
+                                    <div className="about-experience-date column-6">
+                                        <h4 className="font-size__xs font-weight__100">
+                                            2015-2016
+                                        </h4>
+                                        <p className="font-weight__100">
+                                            Pasig, Philippines
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -3,8 +3,9 @@ $GramatikaRegular: "Gramatika-Regular";
 $GramatikaMedium: "Gramatika-Medium";
 $GramatikaBold: "Gramatika-Bold";
 $GramatikaBlack: "Gramatika-Black";
-$default: "Gramatika-Medium", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
-  Droid Sans, "Helvetica Neue", "sans-serif";
+$default: "Gramatika-Medium", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue",
+    "sans-serif";
 
 // Colors
 $pink: #ff2c9c;
@@ -13,6 +14,7 @@ $default-black: #000;
 $default-white: #fff;
 $hero-color-right: #fff;
 $hero-color-left: #0d243c;
+$experience-color: #929292;
 
 // Hero
 $hero-heading-xl: 5em;
@@ -25,3 +27,50 @@ $s: 1.8rem; // small
 $xs: 1.4rem; // xs
 $buttonSize: 1.12rem;
 $caption: 1.8rem;
+
+.font-size {
+    &__xs {
+        font-size: clamp(18px, 1.4vw, 20px);
+    }
+
+    &__sm {
+        font-size: clamp(20px, 2vw, 40px);
+    }
+
+    &__md {
+        font-size: clamp(1.5em, 2.6vw, 2.8em);
+    }
+
+    &__lg {
+        font-size: clamp(2.4em, 4.8vw, 4em);
+    }
+
+    &__xl {
+        font-size: clamp(2.8em, 5vw, 5em);
+    }
+
+    &__xxl {
+        font-size: clamp(3em, 5vw, 6em);
+    }
+}
+
+.font-weight {
+    &__100 {
+        font-family: $GramatikaLight;
+    }
+    &__300 {
+        font-family: $GramatikaRegular;
+    }
+
+    &__500 {
+        font-family: $GramatikaMedium;
+    }
+
+    &__700 {
+        font-family: $GramatikaBold;
+    }
+
+    &__900 {
+        font-family: $GramatikaBlack;
+    }
+}

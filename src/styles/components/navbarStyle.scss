@@ -11,12 +11,12 @@
         font-family: var.$GramatikaBlack;
         font-weight: 700;
         color: white;
-        @include respond(phablets) {
+        @include respond(tablets) {
             color: black;
         }
     }
 
-    @include respond(phablets) {
+    @include respond(tablets) {
         background: transparent;
     }
     // &__inner-container {
@@ -46,6 +46,7 @@
 
     &__container {
         margin: 0 auto;
+
         // 576px smphones
         @include respond(smphones) {
             // width: 80%;

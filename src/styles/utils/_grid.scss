@@ -42,7 +42,7 @@ $container-xxl: 120rem;
     flex-direction: column;
 }
 
-@include respond(phablets) {
+@include respond(tablets) {
     .l-row {
         display: flex;
         flex-wrap: wrap;
