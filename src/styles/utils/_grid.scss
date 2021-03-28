@@ -54,6 +54,8 @@ $container-xxl: 120rem;
     width: 90%;
     max-width: 90%;
     margin: 0 auto;
+    height: 100%;
+    min-height: 100%;
 
     // xsphones 24rem
     @include respond(xsphones) {

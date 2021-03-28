@@ -15,13 +15,6 @@ const About = () => {
                         className="about__bg-image"
                         style={{ backgroundImage: `url(${ImagePortrait})` }}
                     ></div>
-                    {/* <div className="about__image w-full">
-                        <img
-                            src={ImagePortrait}
-                            alt="portrait"
-                            className="w-full"
-                        />
-                    </div> */}
                 </div>
 
                 {/* Right */}

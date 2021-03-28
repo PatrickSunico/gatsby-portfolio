@@ -1,0 +1,16 @@
+@use "../../styles/utils/variables" as var;
+@import "../../styles/utils/mixins";
+
+.portfolio {
+    &-selector {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+
+    &-select {
+        display: flex;
+    }
+}

@@ -3,28 +3,32 @@
 // Block
 .about {
     position: relative;
-    height: 100%;
     display: flex;
     flex-direction: column;
 
     &-left {
-        padding: 20px;
         height: 500px;
+        // margin-right: 0px;
+        margin: 0;
     }
 
     &-right {
-        padding: 20px;
+        // padding-top: 40px;
     }
 
     // Elements
     &-description {
         width: 100%;
-        padding: 20px;
+        padding: 20px 0;
     }
 
     &__text-details {
+        h2 {
+            line-height: clamp(50px, 70px, 5vw);
+        }
         p {
             font-family: var.$GramatikaRegular;
+            line-height: 25px;
         }
     }
 
@@ -45,6 +49,7 @@
         display: flex;
         width: 100%;
         flex-direction: column;
+        margin-top: 20px;
         // justify-content: space-evenly;
 
         &-block {
@@ -60,9 +65,7 @@
             // align-items: center;
 
             h4 {
-            }
-
-            p {
+                margin-bottom: 8px;
             }
         }
 
@@ -72,6 +75,10 @@
             // justify-content: flex-end;
             // text-align: right;
             align-items: flex-end;
+
+            h4 {
+                margin-bottom: 8px;
+            }
         }
     }
 
@@ -82,20 +89,16 @@
             background-size: cover;
             background-position: 100% 50%;
             background-repeat: no-repeat;
-            display: flex;
         }
     }
 
     @include respond(smphones) {
-        // &__image {
-        //     display: block;
-        // }
     }
 
     @include respond(tablets) {
         &-left {
-            height: 100%;
-            padding: 0;
+            min-height: 100vh;
+            margin-right: 50px;
         }
     }
 
@@ -123,7 +126,7 @@
 
     /*Container Layout*/
     &-container {
-        height: 100%;
+        // height: 100%;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -136,12 +139,13 @@
         }
 
         @include respond(phablets) {
-            height: 100vh;
+            // height: 100vh;
         }
 
         @include respond(tablets) {
             display: flex;
             flex-direction: row;
+            // height: 100vh;
         }
 
         @include respond(laptops) {

@@ -30,7 +30,7 @@ $caption: 1.8rem;
 
 .font-size {
     &__xs {
-        font-size: clamp(18px, 1.4vw, 20px);
+        font-size: clamp(16px, 1.4vw, 16px);
     }
 
     &__sm {
@@ -42,7 +42,7 @@ $caption: 1.8rem;
     }
 
     &__lg {
-        font-size: clamp(2.4em, 4.8vw, 4em);
+        font-size: clamp(2.4em, 4.2vw, 4em);
     }
 
     &__xl {
