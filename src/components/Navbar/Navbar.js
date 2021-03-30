@@ -9,8 +9,6 @@ const Navbar = ({ siteTitle }) => (
                 {/* Logo */}
                 <div className="flex-shrink-0 flex items-center">
                     <h3 className="text-3xl navbar__logo">PS</h3>
-
-                    {/* <h1 className="text-3xl navbar__logo">PS</h1> */}
                 </div>
 
                 {/* Menu */}

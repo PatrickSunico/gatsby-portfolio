@@ -12,7 +12,6 @@ const Portfolio = (props) => {
 
                     <div className="portfolio-select">
                         <p>Websites</p>
-
                         <p>Apps</p>
                     </div>
                 </div>
