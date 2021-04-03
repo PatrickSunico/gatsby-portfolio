@@ -1,10 +1,12 @@
 // @use '../styles/utils/variables' as var;
 @use "../utils/variables" as var;
 
-* {
+html,
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
-
 // Resets
 html,
 body,

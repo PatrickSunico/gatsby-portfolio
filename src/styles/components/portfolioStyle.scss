@@ -12,8 +12,75 @@
 
     &-select {
         display: flex;
+        margin-top: 1.4em;
+
         p:nth-of-type(2n) {
             margin-left: 30px;
+        }
+    }
+}
+
+// @mixin offset_image($width, $height, $offset: 0) {
+//     // padding-top: percentage(($height - $offset) / $width);
+//     position: relative;
+//     width: 100%;
+//     height: auto;
+//     z-index: 1;
+
+//     img {
+//         position: absolute;
+//         display: block;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: auto;
+//     }
+
+//     &.top {
+//         img {
+//             top: auto;
+//             bottom: 0;
+//         }
+//     }
+// }
+
+// Project Container
+.portfolio {
+    &-list {
+        margin-top: 5em;
+    }
+
+    // Project Containers
+
+    &-item-container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    &-text-container {
+        z-index: 1;
+    }
+
+    &-image-container {
+        z-index: -1;
+        position: relative;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+
+        img {
+            // position: absolute;
+            // display: block;
+            // top: 0;
+            // left: 0;
+            // width: 100%;
+            // height: auto;
         }
     }
 }
