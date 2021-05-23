@@ -4,7 +4,6 @@ import { Link } from "gatsby";
 import Intlq from "../../images/image-portrait.jpg";
 
 // import ImagePortrait from "../../images/image-portrait.jpg";
-
 const Portfolio = (props) => {
     return (
         <section className="portfolio l-container">

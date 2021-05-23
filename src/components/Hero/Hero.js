@@ -17,6 +17,7 @@ const Hero = () => {
                                 <h3 className="bg-hero__title space-bottom font-size__xl">
                                     Patrick Sunico
                                 </h3>
+
                                 <p className="bg-hero__caption space-bottom font-size__sm">
                                     Frontend Developer & UI Designer
                                 </p>
@@ -31,4 +32,5 @@ const Hero = () => {
     );
 };
 
+Hero.propTypes = {};
 export default Hero;

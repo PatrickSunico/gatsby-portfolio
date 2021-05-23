@@ -26,6 +26,7 @@
         display: flex;
         background-color: var.$hero-color-left;
         height: 300px;
+        display: none;
     }
 
     &__title-container {
@@ -96,6 +97,7 @@
 
         &__right {
             min-height: 100vh;
+            display: block;
         }
 
         &__title-container {
